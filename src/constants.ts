@@ -1223,6 +1223,8 @@ export interface CategoryPageData {
   };
 }
 
+const pinnedSupplementProducts = bestSellers.filter(({ id }) => id === 'ma01' || id === 'ma02');
+
 export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
   'sua-rua-mat': {
     title: 'Sữa rửa mặt',
@@ -3103,6 +3105,319 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         'Vitamin B3 (Niacinamide)',
         'Glycin',
       ],
+    },
+  },
+  'thuc-pham-bo-sung': {
+    title: 'Thực phẩm bổ sung',
+    breadcrumbs: ['Danh mục', 'Thực phẩm chức năng'],
+    totalProducts: 81,
+    products: [
+      ...pinnedSupplementProducts,
+      {
+        id: '26481',
+        category: 'thuc-pham-bo-sung',
+        name: 'Organic Zinc Thompsons 180 viên - Viên uống kẽm hữu cơ',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/organic-zinc-thompsons-180-vien-vien-uong-kem-huu-co-0.webp',
+      },
+      {
+        id: '26491',
+        category: 'thuc-pham-bo-sung',
+        name: 'Mason Natural Ferrous Gluconate 50 viên - Viên uống bổ sung sắt',
+        price: '330.000 đ',
+        subPrice: '6,600 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/mason-natural-ferrous-gluconate-50-vien-vien-uong-bo-sung-sat-0.webp',
+      },
+      {
+        id: '23933',
+        category: 'thuc-pham-bo-sung',
+        name: 'Maisugar Light Nutifine 50 gói x 1g - Đường bắp',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/maisugar-light-nutifine-50-goi-x-1g-duong-bap-0.webp',
+      },
+      {
+        id: '26495',
+        category: 'thuc-pham-bo-sung',
+        name: 'Mason Natural Calcium Citrate +D3 60 viên - Bổ sung Calci, Vitamin D',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/mason-natural-calcium-citrate-d3-60-vien-bo-sung-calci-vitamin-d-0.webp',
+      },
+      {
+        id: '26501',
+        category: 'thuc-pham-bo-sung',
+        name: 'Organic Zinc Thompsons 30 viên - Viên uống kẽm hữu cơ',
+        price: '580.000 đ',
+        subPrice: '19,333 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/organic-zinc-thompsons-30-vien-vien-uong-kem-huu-co-0.webp',
+      },
+      {
+        id: '21725',
+        category: 'thuc-pham-bo-sung',
+        name: 'Cjel Iron CPC1 Hà Nội 20 gói x 15g - Giúp bổ sung sắt, acid folic',
+        price: '120.000 đ',
+        subPrice: '6,000 đ/Gói',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/cjel-iron-cpc1-ha-noi-20-goi-x-15g-giup-bo-sung-sat-acid-folic-0.webp',
+      },
+      {
+        id: '24181',
+        category: 'thuc-pham-bo-sung',
+        name: 'Ích Nhi Thạch Chất Xơ Nam Dược 21 gói x 30g',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/ich-nhi-thach-chat-xo-nam-duoc-21-goi-x-30g-0.webp',
+      },
+      {
+        id: '26479',
+        category: 'thuc-pham-bo-sung',
+        name: 'Organic Zinc Thompsons 80 viên - Viên uống kẽm hữu cơ',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/organic-zinc-thompsons-80-vien-vien-uong-kem-huu-co-0.webp',
+      },
+      {
+        id: '21127',
+        category: 'thuc-pham-bo-sung',
+        name: 'Super Lecithin 1200mg Capsules Vitatree 60 viên - Hỗ trợ bổ gan',
+        price: '185.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/ho-tro-bo-gan-super-lecithin-1200mg-capsules-vitatree-60-vien-0.webp',
+      },
+      {
+        id: '21028',
+        category: 'thuc-pham-bo-sung',
+        name: 'Viên uống mầm đậu nành SpringLeaf Lecithin 1200mg 200 viên',
+        price: '850.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/vien-uong-mam-dau-nanh-springleaf-lecithin-1200mg-200-vien-0.webp',
+      },
+      {
+        id: '21024',
+        category: 'thuc-pham-bo-sung',
+        name: 'Kẹo dẻo SpringLeaf Aussie Kids Gummy Lutein 60 viên',
+        price: '465.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/keo-deo-springleaf-aussie-kids-gummy-lutein-60-vien-0.webp',
+      },
+      {
+        id: '21023',
+        category: 'thuc-pham-bo-sung',
+        name: 'Kẹo dẻo SpringLeaf Aussie Kids Gummy Lutein 80 viên',
+        price: '550.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/keo-deo-springleaf-aussie-kids-gummy-lutein-80-vien-0.webp',
+      },
+      {
+        id: '21124',
+        category: 'thuc-pham-bo-sung',
+        name: 'Ultra CoQ10 Max 150mg Capsules Vitatree 60 viên - Viên uống tim mạch',
+        price: '672.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/vien-uong-tim-mach-ultra-coq10-max-150mg-capsules-vitatree-60-vien-0.webp',
+      },
+      {
+        id: '21121',
+        category: 'thuc-pham-bo-sung',
+        name: 'Kids High Strength DHA Algae Oil plus Lutein Vitatree 30 viên - Bổ sung DHA, Lutein cho bé',
+        price: '520.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/bo-sung-dha-lutein-cho-be-kids-high-strength-dha-algae-oil-plus-lutein-vitatree-30-vien-0.webp',
+      },
+      {
+        id: '20721',
+        category: 'thuc-pham-bo-sung',
+        name: 'Lutein Omega3 Dolexphar 3 vỉ x 10 viên',
+        price: '98.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/lutein-omega3-dolexphar-3-vi-x-10-vien-470-0.webp',
+      },
+      {
+        id: '20283',
+        category: 'thuc-pham-bo-sung',
+        name: 'Viên uống bổ mắt Vedixmax Alpha Pharma 2 vỉ x 15 viên',
+        price: '350.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/vien-uong-bo-mat-vedixmax-alpha-pharma-2-vi-x-15-vien_00193.webp',
+      },
+      {
+        id: '20196',
+        category: 'thuc-pham-bo-sung',
+        name: 'Viên Ngậm Bổ Mắt Lutein Eyes Happy Vitamin 60 viên',
+        price: '215.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/vien-ngam-bo-mat-lutein-eyes-happy-vitamin-60-vien_00771.webp',
+      },
+      {
+        id: '19945',
+        category: 'thuc-pham-bo-sung',
+        name: 'Non-GMO Lecithin 1200mg Now Foods 100 viên',
+        price: '400.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/non-gmo-lecithin-1200mg-now-foods-100-vien-548_00177.webp',
+      },
+      {
+        id: '19480',
+        category: 'thuc-pham-bo-sung',
+        name: 'Nattocopeet Dược Đức 30 viên',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/nattocopeet-duoc-duc-30-vien_00834.webp',
+      },
+      {
+        id: '19595',
+        category: 'thuc-pham-bo-sung',
+        name: 'Viên uống bổ mắt NZ EYE Everyday Health, 30 viên',
+        price: '350.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/vien-uong-bo-mat-nz-eye-everyday-health-30-vien-755_00746.webp',
+      },
+      {
+        id: '19433',
+        category: 'thuc-pham-bo-sung',
+        name: 'Optiway For Kid Optiway 5 vỉ x 4 viên',
+        price: '215.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/optiway-for-kid-optiway-5-vi-x-4-vien_00834.webp',
+      },
+      {
+        id: '19591',
+        category: 'thuc-pham-bo-sung',
+        name: 'NZ CoQ10 200mg Everyday Health, 30 viên',
+        price: '465.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/nz-coq10-200mg-everyday-health-30-vien_00182.webp',
+      },
+      {
+        id: '19021',
+        category: 'thuc-pham-bo-sung',
+        name: 'Double Care Lutein Milk Thistle Unicell Pharm 5 vỉ x 6 viên',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/double-care-lutein-milk-thistle-unicell-pharm-5-vi-x-6-vien_00314.webp',
+      },
+      {
+        id: '18578',
+        category: 'thuc-pham-bo-sung',
+        name: 'Lutein Plus Orihiro 60 viên - Viên uống bổ mắt, giảm khô mắt',
+        price: '550.000 đ',
+        subPrice: '9,167 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/lutein-plus-orihiro-60-vien-vien-uong-bo-mat-giam-kho-mat_00833.webp',
+      },
+      {
+        id: '18570',
+        category: 'thuc-pham-bo-sung',
+        name: 'Lutein việt quất Orihiro 120 viên - Hỗ trợ tăng cường thị lực',
+        price: '240.000 đ',
+        subPrice: '2,000 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/lutein-viet-quat-orihiro-120-vien-ho-tro-tang-cuong-thi-luc_00811.webp',
+      },
+      {
+        id: '18566',
+        category: 'thuc-pham-bo-sung',
+        name: 'Viên nang lòng đỏ trứng tỏi đen Orihiro 90 viên - Bồi bổ và phục hồi sức khỏe',
+        price: '520.000 đ',
+        subPrice: '5,778 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/vien-nang-long-do-trung-toi-den-orihiro-90-vien-boi-bo-va-phuc-hoi-suc-khoe_00368.webp',
+      },
+      {
+        id: '18265',
+        category: 'thuc-pham-bo-sung',
+        name: 'Bio-Quinone Active Q10 Gold 100mg Pharma Nord 30 viên - Hỗ trợ sức khoẻ cho hệ tim mạch',
+        price: '648.000 đ',
+        subPrice: '21,600 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/bio-quinone-active-q10-gold-100mg-pharma-nord-30-vien-ho-tro-suc-khoe-cho-he-tim-mach_00307.webp',
+      },
+      {
+        id: '17850',
+        category: 'thuc-pham-bo-sung',
+        name: 'Omega 3 CoQ10 IsoPharco 100 viên - Viên uống hỗ trợ sức khỏe tim mạch',
+        price: '102.000 đ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/omega-3-isopharco-chai-100-vien_00974.webp',
+      },
+      {
+        id: '17689',
+        category: 'thuc-pham-bo-sung',
+        name: 'Eyematin Meracine 30 viên - Hỗ trợ giảm cận thị, viễn thị, nhức mỏi mắt, khô mắt',
+        price: '155.000 đ',
+        subPrice: '5,167 đ/Viên',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/eyematin-meracine-30-vien-ho-tro-giam-can-thi-vien-thi-nhuc-moi-mat-kho-mat_00670.webp',
+      },
+      {
+        id: '17006',
+        category: 'thuc-pham-bo-sung',
+        name: 'Coenzyme Q10 60mg Cevrai 30 viên - Tăng cường sức khoẻ tim mạch',
+        price: 'Liên hệ',
+        image:
+          'https://cdn.famitaa.net/storage/uploads/noidung/thumb/coenzyme-q10-60mg-cevrai-30-vien-tang-cuong-suc-khoe-tim-mach_00769.webp',
+      },
+    ],
+    filters: {
+      LOAI_TIN: ['Lutein', 'Taurine', 'Zeaxanthin', 'Coenzyme Q10 (CoQ10)', 'Resveratrol', 'Lecithin'],
+      QUY_CACH: [
+        '100 viên',
+        '30 viên',
+        '50 viên',
+        '60 viên',
+        '90 viên',
+        '120 viên',
+        '150 viên',
+        '200 viên',
+        '250 viên',
+        '50ml',
+        '20 viên',
+        '20 gói',
+        '40 viên',
+        '600ml',
+      ],
+      NHA_SAN_XUAT: [
+        'Pharmekal Health Products, LLC',
+        'MediUSA',
+        'Aloe Vera of America, Inc.',
+        "Puritan's Pride",
+        'Now Foods',
+        'Golden Health PTY Ltd',
+        'Erbex Srl',
+      ],
+      THUONG_HIEU: [
+        'Costar',
+        "Puritan's Pride",
+        'Golden Health',
+        'Blackmores',
+        'Mason Natural',
+        'Pharmekal',
+        "Doctor's Best",
+        'Trunature',
+        'Swanson',
+        'Forever',
+        'Healthy Care',
+        'Orihiro',
+      ],
+      XUAT_XU: [
+        'Pháp',
+        'Việt Nam',
+        'Anh',
+        'Hàn Quốc',
+        'Italia',
+        'Mỹ',
+        'Đức',
+        'Úc',
+        'Nhật Bản',
+        'New Zealand',
+        'Indonesia',
+        'Đan Mạch',
+      ],
+      HOAT_CHAT: ['Lutein', 'Taurine', 'Zeaxanthin', 'Coenzyme Q10', 'Resveratrol', 'Lecithin'],
     },
   },
   'thuc-pham-chuc-nang': {
