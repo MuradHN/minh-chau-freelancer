@@ -62,48 +62,46 @@ export const bestSellers: Product[] = [
     subPrice: '',
     image: '/image/ma01-1.png',
     hasPrescription: true,
-    subImages: [
-      '/image/ma01-2.png',
-      '/image/ma01-3.png',],
-    description: 
-          '✅ THÔNG TIN SẢN PHẨM\n' +
-          'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
-          'Khối lượng tịnh: 800g\n' +
-          'Hương vị: Vani\n' +
-          'Quy cách: 1 lon 800g\n' +
-          'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
-          'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
-          '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
-          'Khoáng chất: Canxi, magie, kẽm…\n' +
-          'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
-          'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
-          'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
-          '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
-          'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
-          'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
-          'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
-          'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
-          'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
-          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-          'Người trưởng thành từ 18 tuổi trở lên\n' +
-          'Người cần bổ sung canxi và vi chất\n' +
-          'Người bận rộn cần bữa phụ nhanh gọn\n' +
-          'Người quan tâm đến chế độ ăn cân bằng\n\n' +
-          '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
-          'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
-          'Khuấy đều đến khi tan hoàn toàn\n' +
-          'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
-          'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
-          '📦 BẢO QUẢN\n' +
-          'Đậy kín nắp sau khi sử dụng\n' +
-          'Bảo quản nơi khô ráo, thoáng mát\n' +
-          'Tránh ánh nắng trực tiếp\n' +
-          'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
-          '⚠️ LƯU Ý\n' +
-          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
-          'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
-          'Sản phẩm có chứa sữa và đạm đậu nành\n' +
-          'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
+    subImages: ['/image/ma01-2.png', '/image/ma01-3.png'],
+    description:
+      '✅ THÔNG TIN SẢN PHẨM\n' +
+      'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
+      'Khối lượng tịnh: 800g\n' +
+      'Hương vị: Vani\n' +
+      'Quy cách: 1 lon 800g\n' +
+      'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
+      'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
+      '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
+      'Khoáng chất: Canxi, magie, kẽm…\n' +
+      'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
+      'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
+      'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
+      '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
+      'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
+      'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
+      'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
+      'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
+      'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
+      '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+      'Người trưởng thành từ 18 tuổi trở lên\n' +
+      'Người cần bổ sung canxi và vi chất\n' +
+      'Người bận rộn cần bữa phụ nhanh gọn\n' +
+      'Người quan tâm đến chế độ ăn cân bằng\n\n' +
+      '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
+      'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
+      'Khuấy đều đến khi tan hoàn toàn\n' +
+      'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
+      'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
+      '📦 BẢO QUẢN\n' +
+      'Đậy kín nắp sau khi sử dụng\n' +
+      'Bảo quản nơi khô ráo, thoáng mát\n' +
+      'Tránh ánh nắng trực tiếp\n' +
+      'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
+      '⚠️ LƯU Ý\n' +
+      'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
+      'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
+      'Sản phẩm có chứa sữa và đạm đậu nành\n' +
+      'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
   },
   {
     id: 'ma02',
@@ -113,10 +111,7 @@ export const bestSellers: Product[] = [
     subPrice: '',
     image: '/image/ma02-1.png',
     hasPrescription: true,
-    subImages: [
-      '/image/ma02-2.png',
-      '/image/ma02-3.png',
-    ],
+    subImages: ['/image/ma02-2.png', '/image/ma02-3.png'],
     description:
       '✅ THÔNG TIN SẢN PHẨM\n' +
       'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
@@ -125,39 +120,32 @@ export const bestSellers: Product[] = [
       'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
       'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
       'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
-
       '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
       'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
       'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
       'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
       'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
-
       '💪 CÔNG DỤNG DINH DƯỠNG\n' +
       'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
       'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
       'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
       '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
-
       '👨‍👩‍👧 PHÙ HỢP CHO\n' +
       'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
       'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
       'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
-
       '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
       'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
       'Khuấy đều đến khi tan hoàn toàn\n' +
       'Uống 3 ly mỗi ngày\n\n' +
-
       '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
       'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
       'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
       'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
       'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
-
       '⏳ HẠN SỬ DỤNG\n' +
       '24 tháng kể từ ngày sản xuất\n' +
       'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
-
       'Lưu ý:\n' +
       'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
       'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +
@@ -3122,6 +3110,103 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
     totalProducts: 5718,
     products: [
       {
+        id: 'ma01',
+        category: 'thuc-pham-chuc-nang',
+        name: 'SỤN VI CÁ MẬP - 🥛 SỮA PROVIASURE GOLD PLUS+++ CANXI BỘT SỤN VI CÁ MẬP 800G – BỔ SUNG DINH DƯỠNG & CANXI HẰNG NGÀY',
+        price: '650.000 đ',
+        subPrice: '',
+        image: '/image/ma01-1.png',
+        hasPrescription: true,
+        subImages: ['/image/ma01-2.png', '/image/ma01-3.png'],
+        description:
+          '✅ THÔNG TIN SẢN PHẨM\n' +
+          'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
+          'Khối lượng tịnh: 800g\n' +
+          'Hương vị: Vani\n' +
+          'Quy cách: 1 lon 800g\n' +
+          'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
+          'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
+          '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
+          'Khoáng chất: Canxi, magie, kẽm…\n' +
+          'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
+          'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
+          'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
+          '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
+          'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
+          'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
+          'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
+          'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
+          'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
+          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+          'Người trưởng thành từ 18 tuổi trở lên\n' +
+          'Người cần bổ sung canxi và vi chất\n' +
+          'Người bận rộn cần bữa phụ nhanh gọn\n' +
+          'Người quan tâm đến chế độ ăn cân bằng\n\n' +
+          '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
+          'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
+          'Khuấy đều đến khi tan hoàn toàn\n' +
+          'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
+          'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
+          '📦 BẢO QUẢN\n' +
+          'Đậy kín nắp sau khi sử dụng\n' +
+          'Bảo quản nơi khô ráo, thoáng mát\n' +
+          'Tránh ánh nắng trực tiếp\n' +
+          'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
+          '⚠️ LƯU Ý\n' +
+          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
+          'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
+          'Sản phẩm có chứa sữa và đạm đậu nành\n' +
+          'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
+      },
+      {
+        id: 'ma02',
+        category: 'thuc-pham-chuc-nang',
+        name: 'CƠ XƯƠNG KHỚP - 🥛 SỮA CƠ XƯƠNG KHỚP PROVIASURE GOLD PLUS+++ 800G (MẪU MỚI CẢI TIẾN) – THỰC PHẨM BỔ SUNG',
+        price: '650.000 đ',
+        subPrice: '',
+        image: '/image/ma02-1.png',
+        hasPrescription: true,
+        subImages: ['/image/ma02-2.png', '/image/ma02-3.png'],
+        description:
+          '✅ THÔNG TIN SẢN PHẨM\n' +
+          'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
+          'Phân loại: Thực phẩm bổ sung\n' +
+          'Khối lượng tịnh: 800g\n' +
+          'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
+          'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
+          'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
+          '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
+          'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
+          'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
+          'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
+          'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
+          '💪 CÔNG DỤNG DINH DƯỠNG\n' +
+          'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
+          'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
+          'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
+          '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
+          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+          'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
+          'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
+          'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
+          '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
+          'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
+          'Khuấy đều đến khi tan hoàn toàn\n' +
+          'Uống 3 ly mỗi ngày\n\n' +
+          '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
+          'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
+          'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
+          'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
+          'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
+          '⏳ HẠN SỬ DỤNG\n' +
+          '24 tháng kể từ ngày sản xuất\n' +
+          'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
+          'Lưu ý:\n' +
+          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
+          'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +
+          'Tham khảo ý kiến bác sĩ trước khi sử dụng nếu bạn đang dùng thuốc hoặc có bất kỳ vấn đề sức khỏe nào.',
+      },
+      {
         id: '25089',
         category: 'thuc-pham-chuc-nang',
         name: 'Vital E Eurovit 3 vỉ x 10 viên - Hỗ trợ lão hoá da',
@@ -3274,115 +3359,6 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         price: '480.000 đ',
         image:
           'https://cdn.famitaa.net/storage/uploads/noidung/thumb/eyefine-fujina-lo-30-vien-vien-uong-bao-ve-mat-0.webp',
-      },
-      {
-        id: 'ma01',
-        category: 'thuc-pham-chuc-nang',
-        name: 'SỤN VI CÁ MẬP - 🥛 SỮA PROVIASURE GOLD PLUS+++ CANXI BỘT SỤN VI CÁ MẬP 800G – BỔ SUNG DINH DƯỠNG & CANXI HẰNG NGÀY',
-        price: '650.000 đ',
-        subPrice: '',
-        image: '/image/ma01-1.png',
-        hasPrescription: true,
-        subImages: [
-          '/image/ma01-2.png',
-          '/image/ma01-3.png',],
-        description: 
-              '✅ THÔNG TIN SẢN PHẨM\n' +
-              'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
-              'Khối lượng tịnh: 800g\n' +
-              'Hương vị: Vani\n' +
-              'Quy cách: 1 lon 800g\n' +
-              'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
-              'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
-              '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
-              'Khoáng chất: Canxi, magie, kẽm…\n' +
-              'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
-              'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
-              'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
-              '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
-              'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
-              'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
-              'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
-              'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
-              'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
-              '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-              'Người trưởng thành từ 18 tuổi trở lên\n' +
-              'Người cần bổ sung canxi và vi chất\n' +
-              'Người bận rộn cần bữa phụ nhanh gọn\n' +
-              'Người quan tâm đến chế độ ăn cân bằng\n\n' +
-              '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
-              'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
-              'Khuấy đều đến khi tan hoàn toàn\n' +
-              'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
-              'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
-              '📦 BẢO QUẢN\n' +
-              'Đậy kín nắp sau khi sử dụng\n' +
-              'Bảo quản nơi khô ráo, thoáng mát\n' +
-              'Tránh ánh nắng trực tiếp\n' +
-              'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
-              '⚠️ LƯU Ý\n' +
-              'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
-              'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
-              'Sản phẩm có chứa sữa và đạm đậu nành\n' +
-              'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
-      },
-      {
-        id: 'ma02',
-        category: 'thuc-pham-chuc-nang',
-        name: 'CƠ XƯƠNG KHỚP - 🥛 SỮA CƠ XƯƠNG KHỚP PROVIASURE GOLD PLUS+++ 800G (MẪU MỚI CẢI TIẾN) – THỰC PHẨM BỔ SUNG',
-        price: '650.000 đ',
-        subPrice: '',
-        image: '/image/ma02-1.png',
-        hasPrescription: true,
-        subImages: [
-          '/image/ma02-2.png',
-          '/image/ma02-3.png',
-        ],
-        description:
-          '✅ THÔNG TIN SẢN PHẨM\n' +
-          'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
-          'Phân loại: Thực phẩm bổ sung\n' +
-          'Khối lượng tịnh: 800g\n' +
-          'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
-          'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
-          'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
-
-          '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
-          'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
-          'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
-          'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
-          'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
-
-          '💪 CÔNG DỤNG DINH DƯỠNG\n' +
-          'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
-          'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
-          'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
-          '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
-
-          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-          'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
-          'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
-          'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
-
-          '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
-          'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
-          'Khuấy đều đến khi tan hoàn toàn\n' +
-          'Uống 3 ly mỗi ngày\n\n' +
-
-          '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
-          'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
-          'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
-          'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
-          'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
-
-          '⏳ HẠN SỬ DỤNG\n' +
-          '24 tháng kể từ ngày sản xuất\n' +
-          'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
-
-          'Lưu ý:\n' +
-          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
-          'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +
-          'Tham khảo ý kiến bác sĩ trước khi sử dụng nếu bạn đang dùng thuốc hoặc có bất kỳ vấn đề sức khỏe nào.',
       },
       {
         id: '23831',
@@ -3549,48 +3525,46 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma01-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma01-2.png',
-          '/image/ma01-3.png',],
-        description: 
-              '✅ THÔNG TIN SẢN PHẨM\n' +
-              'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
-              'Khối lượng tịnh: 800g\n' +
-              'Hương vị: Vani\n' +
-              'Quy cách: 1 lon 800g\n' +
-              'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
-              'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
-              '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
-              'Khoáng chất: Canxi, magie, kẽm…\n' +
-              'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
-              'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
-              'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
-              '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
-              'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
-              'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
-              'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
-              'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
-              'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
-              '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-              'Người trưởng thành từ 18 tuổi trở lên\n' +
-              'Người cần bổ sung canxi và vi chất\n' +
-              'Người bận rộn cần bữa phụ nhanh gọn\n' +
-              'Người quan tâm đến chế độ ăn cân bằng\n\n' +
-              '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
-              'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
-              'Khuấy đều đến khi tan hoàn toàn\n' +
-              'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
-              'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
-              '📦 BẢO QUẢN\n' +
-              'Đậy kín nắp sau khi sử dụng\n' +
-              'Bảo quản nơi khô ráo, thoáng mát\n' +
-              'Tránh ánh nắng trực tiếp\n' +
-              'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
-              '⚠️ LƯU Ý\n' +
-              'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
-              'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
-              'Sản phẩm có chứa sữa và đạm đậu nành\n' +
-              'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
+        subImages: ['/image/ma01-2.png', '/image/ma01-3.png'],
+        description:
+          '✅ THÔNG TIN SẢN PHẨM\n' +
+          'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
+          'Khối lượng tịnh: 800g\n' +
+          'Hương vị: Vani\n' +
+          'Quy cách: 1 lon 800g\n' +
+          'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
+          'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
+          '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
+          'Khoáng chất: Canxi, magie, kẽm…\n' +
+          'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
+          'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
+          'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
+          '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
+          'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
+          'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
+          'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
+          'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
+          'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
+          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+          'Người trưởng thành từ 18 tuổi trở lên\n' +
+          'Người cần bổ sung canxi và vi chất\n' +
+          'Người bận rộn cần bữa phụ nhanh gọn\n' +
+          'Người quan tâm đến chế độ ăn cân bằng\n\n' +
+          '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
+          'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
+          'Khuấy đều đến khi tan hoàn toàn\n' +
+          'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
+          'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
+          '📦 BẢO QUẢN\n' +
+          'Đậy kín nắp sau khi sử dụng\n' +
+          'Bảo quản nơi khô ráo, thoáng mát\n' +
+          'Tránh ánh nắng trực tiếp\n' +
+          'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
+          '⚠️ LƯU Ý\n' +
+          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
+          'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
+          'Sản phẩm có chứa sữa và đạm đậu nành\n' +
+          'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
       },
       {
         id: 'ma02',
@@ -3600,10 +3574,7 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma02-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma02-2.png',
-          '/image/ma02-3.png',
-        ],
+        subImages: ['/image/ma02-2.png', '/image/ma02-3.png'],
         description:
           '✅ THÔNG TIN SẢN PHẨM\n' +
           'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
@@ -3612,39 +3583,32 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
           'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
           'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
           'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
-
           '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
           'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
           'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
           'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
           'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
-
           '💪 CÔNG DỤNG DINH DƯỠNG\n' +
           'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
           'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
           'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
           '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
-
           '👨‍👩‍👧 PHÙ HỢP CHO\n' +
           'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
           'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
           'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
-
           '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
           'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
           'Khuấy đều đến khi tan hoàn toàn\n' +
           'Uống 3 ly mỗi ngày\n\n' +
-
           '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
           'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
           'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
           'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
           'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
-
           '⏳ HẠN SỬ DỤNG\n' +
           '24 tháng kể từ ngày sản xuất\n' +
           'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
-
           'Lưu ý:\n' +
           'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
           'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +
@@ -4203,48 +4167,46 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma01-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma01-2.png',
-          '/image/ma01-3.png',],
-        description: 
-              '✅ THÔNG TIN SẢN PHẨM\n' +
-              'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
-              'Khối lượng tịnh: 800g\n' +
-              'Hương vị: Vani\n' +
-              'Quy cách: 1 lon 800g\n' +
-              'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
-              'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
-              '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
-              'Khoáng chất: Canxi, magie, kẽm…\n' +
-              'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
-              'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
-              'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
-              '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
-              'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
-              'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
-              'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
-              'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
-              'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
-              '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-              'Người trưởng thành từ 18 tuổi trở lên\n' +
-              'Người cần bổ sung canxi và vi chất\n' +
-              'Người bận rộn cần bữa phụ nhanh gọn\n' +
-              'Người quan tâm đến chế độ ăn cân bằng\n\n' +
-              '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
-              'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
-              'Khuấy đều đến khi tan hoàn toàn\n' +
-              'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
-              'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
-              '📦 BẢO QUẢN\n' +
-              'Đậy kín nắp sau khi sử dụng\n' +
-              'Bảo quản nơi khô ráo, thoáng mát\n' +
-              'Tránh ánh nắng trực tiếp\n' +
-              'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
-              '⚠️ LƯU Ý\n' +
-              'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
-              'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
-              'Sản phẩm có chứa sữa và đạm đậu nành\n' +
-              'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
+        subImages: ['/image/ma01-2.png', '/image/ma01-3.png'],
+        description:
+          '✅ THÔNG TIN SẢN PHẨM\n' +
+          'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
+          'Khối lượng tịnh: 800g\n' +
+          'Hương vị: Vani\n' +
+          'Quy cách: 1 lon 800g\n' +
+          'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
+          'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
+          '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
+          'Khoáng chất: Canxi, magie, kẽm…\n' +
+          'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
+          'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
+          'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
+          '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
+          'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
+          'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
+          'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
+          'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
+          'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
+          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+          'Người trưởng thành từ 18 tuổi trở lên\n' +
+          'Người cần bổ sung canxi và vi chất\n' +
+          'Người bận rộn cần bữa phụ nhanh gọn\n' +
+          'Người quan tâm đến chế độ ăn cân bằng\n\n' +
+          '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
+          'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
+          'Khuấy đều đến khi tan hoàn toàn\n' +
+          'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
+          'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
+          '📦 BẢO QUẢN\n' +
+          'Đậy kín nắp sau khi sử dụng\n' +
+          'Bảo quản nơi khô ráo, thoáng mát\n' +
+          'Tránh ánh nắng trực tiếp\n' +
+          'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
+          '⚠️ LƯU Ý\n' +
+          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
+          'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
+          'Sản phẩm có chứa sữa và đạm đậu nành\n' +
+          'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
       },
       {
         id: 'ma02',
@@ -4254,10 +4216,7 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma02-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma02-2.png',
-          '/image/ma02-3.png',
-        ],
+        subImages: ['/image/ma02-2.png', '/image/ma02-3.png'],
         description:
           '✅ THÔNG TIN SẢN PHẨM\n' +
           'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
@@ -4266,39 +4225,32 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
           'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
           'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
           'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
-
           '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
           'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
           'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
           'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
           'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
-
           '💪 CÔNG DỤNG DINH DƯỠNG\n' +
           'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
           'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
           'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
           '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
-
           '👨‍👩‍👧 PHÙ HỢP CHO\n' +
           'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
           'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
           'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
-
           '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
           'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
           'Khuấy đều đến khi tan hoàn toàn\n' +
           'Uống 3 ly mỗi ngày\n\n' +
-
           '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
           'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
           'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
           'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
           'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
-
           '⏳ HẠN SỬ DỤNG\n' +
           '24 tháng kể từ ngày sản xuất\n' +
           'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
-
           'Lưu ý:\n' +
           'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
           'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +
@@ -4443,48 +4395,46 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma01-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma01-2.png',
-          '/image/ma01-3.png',],
-        description: 
-              '✅ THÔNG TIN SẢN PHẨM\n' +
-              'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
-              'Khối lượng tịnh: 800g\n' +
-              'Hương vị: Vani\n' +
-              'Quy cách: 1 lon 800g\n' +
-              'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
-              'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
-              '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
-              'Khoáng chất: Canxi, magie, kẽm…\n' +
-              'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
-              'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
-              'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
-              '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
-              'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
-              'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
-              'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
-              'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
-              'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
-              '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-              'Người trưởng thành từ 18 tuổi trở lên\n' +
-              'Người cần bổ sung canxi và vi chất\n' +
-              'Người bận rộn cần bữa phụ nhanh gọn\n' +
-              'Người quan tâm đến chế độ ăn cân bằng\n\n' +
-              '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
-              'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
-              'Khuấy đều đến khi tan hoàn toàn\n' +
-              'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
-              'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
-              '📦 BẢO QUẢN\n' +
-              'Đậy kín nắp sau khi sử dụng\n' +
-              'Bảo quản nơi khô ráo, thoáng mát\n' +
-              'Tránh ánh nắng trực tiếp\n' +
-              'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
-              '⚠️ LƯU Ý\n' +
-              'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
-              'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
-              'Sản phẩm có chứa sữa và đạm đậu nành\n' +
-              'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
+        subImages: ['/image/ma01-2.png', '/image/ma01-3.png'],
+        description:
+          '✅ THÔNG TIN SẢN PHẨM\n' +
+          'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
+          'Khối lượng tịnh: 800g\n' +
+          'Hương vị: Vani\n' +
+          'Quy cách: 1 lon 800g\n' +
+          'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
+          'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
+          '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
+          'Khoáng chất: Canxi, magie, kẽm…\n' +
+          'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
+          'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
+          'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
+          '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
+          'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
+          'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
+          'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
+          'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
+          'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
+          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+          'Người trưởng thành từ 18 tuổi trở lên\n' +
+          'Người cần bổ sung canxi và vi chất\n' +
+          'Người bận rộn cần bữa phụ nhanh gọn\n' +
+          'Người quan tâm đến chế độ ăn cân bằng\n\n' +
+          '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
+          'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
+          'Khuấy đều đến khi tan hoàn toàn\n' +
+          'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
+          'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
+          '📦 BẢO QUẢN\n' +
+          'Đậy kín nắp sau khi sử dụng\n' +
+          'Bảo quản nơi khô ráo, thoáng mát\n' +
+          'Tránh ánh nắng trực tiếp\n' +
+          'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
+          '⚠️ LƯU Ý\n' +
+          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
+          'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
+          'Sản phẩm có chứa sữa và đạm đậu nành\n' +
+          'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
       },
       {
         id: 'ma02',
@@ -4494,10 +4444,7 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma02-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma02-2.png',
-          '/image/ma02-3.png',
-        ],
+        subImages: ['/image/ma02-2.png', '/image/ma02-3.png'],
         description:
           '✅ THÔNG TIN SẢN PHẨM\n' +
           'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
@@ -4506,39 +4453,32 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
           'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
           'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
           'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
-
           '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
           'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
           'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
           'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
           'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
-
           '💪 CÔNG DỤNG DINH DƯỠNG\n' +
           'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
           'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
           'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
           '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
-
           '👨‍👩‍👧 PHÙ HỢP CHO\n' +
           'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
           'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
           'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
-
           '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
           'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
           'Khuấy đều đến khi tan hoàn toàn\n' +
           'Uống 3 ly mỗi ngày\n\n' +
-
           '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
           'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
           'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
           'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
           'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
-
           '⏳ HẠN SỬ DỤNG\n' +
           '24 tháng kể từ ngày sản xuất\n' +
           'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
-
           'Lưu ý:\n' +
           'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
           'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +
@@ -4716,48 +4656,46 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma01-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma01-2.png',
-          '/image/ma01-3.png',],
-        description: 
-              '✅ THÔNG TIN SẢN PHẨM\n' +
-              'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
-              'Khối lượng tịnh: 800g\n' +
-              'Hương vị: Vani\n' +
-              'Quy cách: 1 lon 800g\n' +
-              'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
-              'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
-              '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
-              'Khoáng chất: Canxi, magie, kẽm…\n' +
-              'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
-              'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
-              'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
-              '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
-              'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
-              'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
-              'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
-              'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
-              'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
-              '👨‍👩‍👧 PHÙ HỢP CHO\n' +
-              'Người trưởng thành từ 18 tuổi trở lên\n' +
-              'Người cần bổ sung canxi và vi chất\n' +
-              'Người bận rộn cần bữa phụ nhanh gọn\n' +
-              'Người quan tâm đến chế độ ăn cân bằng\n\n' +
-              '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
-              'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
-              'Khuấy đều đến khi tan hoàn toàn\n' +
-              'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
-              'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
-              '📦 BẢO QUẢN\n' +
-              'Đậy kín nắp sau khi sử dụng\n' +
-              'Bảo quản nơi khô ráo, thoáng mát\n' +
-              'Tránh ánh nắng trực tiếp\n' +
-              'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
-              '⚠️ LƯU Ý\n' +
-              'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
-              'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
-              'Sản phẩm có chứa sữa và đạm đậu nành\n' +
-              'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
+        subImages: ['/image/ma01-2.png', '/image/ma01-3.png'],
+        description:
+          '✅ THÔNG TIN SẢN PHẨM\n' +
+          'Tên sản phẩm: Sữa ProviaSure Gold Plus+++ Canxi Bột Sụn Vi Cá Mập\n' +
+          'Khối lượng tịnh: 800g\n' +
+          'Hương vị: Vani\n' +
+          'Quy cách: 1 lon 800g\n' +
+          'Tiêu chuẩn: Nhà máy đạt ISO 22000:2018 (theo bao bì)\n' +
+          'Phân loại: Thực phẩm bổ sung dinh dưỡng\n\n' +
+          '🌰 THÀNH PHẦN NỔI BẬT (THEO NHÓM DƯỠNG CHẤT)\n' +
+          'Khoáng chất: Canxi, magie, kẽm…\n' +
+          'Vitamin: A, D3, E, C và nhóm B (B1, B2, B6, B12…)\n' +
+          'Thành phần khác: Isomalt, protein, chất béo, carbohydrate\n' +
+          'Đặc biệt: Sụn vi cá mập (theo thông tin trên bao bì)\n\n' +
+          '⭐ ĐIỂM NỔI BẬT CỦA PROVIASURE GOLD PLUS+++\n' +
+          'Bổ sung canxi hỗ trợ duy trì hệ xương khỏe mạnh\n' +
+          'Cung cấp vitamin & khoáng chất cần thiết cho cơ thể\n' +
+          'Có Isomalt – phù hợp trong chế độ ăn cần kiểm soát lượng đường (theo nhãn)\n' +
+          'Hương vani dễ uống, tiện lợi sử dụng hằng ngày\n' +
+          'Phù hợp dùng làm bữa phụ bổ sung dinh dưỡng\n\n' +
+          '👨‍👩‍👧 PHÙ HỢP CHO\n' +
+          'Người trưởng thành từ 18 tuổi trở lên\n' +
+          'Người cần bổ sung canxi và vi chất\n' +
+          'Người bận rộn cần bữa phụ nhanh gọn\n' +
+          'Người quan tâm đến chế độ ăn cân bằng\n\n' +
+          '☕ HƯỚNG DẪN PHA & SỬ DỤNG\n' +
+          'Pha 4 muỗng gạt ngang (~50g) với 180ml nước ấm (40–50°C)\n' +
+          'Khuấy đều đến khi tan hoàn toàn\n' +
+          'Có thể dùng 2–3 ly mỗi ngày tùy nhu cầu\n' +
+          'Tham khảo hướng dẫn chi tiết trên bao bì\n\n' +
+          '📦 BẢO QUẢN\n' +
+          'Đậy kín nắp sau khi sử dụng\n' +
+          'Bảo quản nơi khô ráo, thoáng mát\n' +
+          'Tránh ánh nắng trực tiếp\n' +
+          'Nên sử dụng trong thời gian khuyến nghị sau khi mở nắp\n\n' +
+          '⚠️ LƯU Ý\n' +
+          'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh\n' +
+          'Không sử dụng nếu mẫn cảm với bất kỳ thành phần nào\n' +
+          'Sản phẩm có chứa sữa và đạm đậu nành\n' +
+          'Nên tham khảo ý kiến chuyên gia khi có chế độ dinh dưỡng đặc biệt',
       },
       {
         id: 'ma02',
@@ -4767,10 +4705,7 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
         subPrice: '',
         image: '/image/ma02-1.png',
         hasPrescription: true,
-        subImages: [
-          '/image/ma02-2.png',
-          '/image/ma02-3.png',
-        ],
+        subImages: ['/image/ma02-2.png', '/image/ma02-3.png'],
         description:
           '✅ THÔNG TIN SẢN PHẨM\n' +
           'Tên sản phẩm: Sữa Cơ Xương Khớp ProviaSure Gold Plus+++\n' +
@@ -4779,39 +4714,32 @@ export const CATEGORY_PAGE_DATA: Record<string, CategoryPageData> = {
           'Đối tượng: Người lớn từ 18 tuổi trở lên (theo nhãn)\n' +
           'Quy cách: 1 lon 800g ~ 28 ly sữa tiêu chuẩn (theo thông tin trên hình)\n' +
           'Tiêu chuẩn nhà máy: ISO 22000:2018 (thể hiện trên bao bì)\n\n' +
-
           '⭐ ĐIỂM NỔI BẬT (THEO THÔNG TIN TRÊN NHÃN)\n' +
           'Canxi + Vitamin D3 (D3): giúp duy trì xương chắc khỏe\n' +
           'Vitamin C: hỗ trợ hệ thống miễn dịch của cơ thể\n' +
           'Vitamin B1: tham gia quá trình chuyển hóa carbohydrate và protein\n' +
           'Dạng bột dễ pha, tiện lợi dùng như bữa phụ dinh dưỡng mỗi ngày\n\n' +
-
           '💪 CÔNG DỤNG DINH DƯỠNG\n' +
           'Bổ sung vitamin và khoáng chất cần thiết cho khẩu phần hằng ngày\n' +
           'Hỗ trợ bổ sung Canxi & Vitamin D3 theo nhu cầu dinh dưỡng\n' +
           'Giúp cơ thể duy trì năng lượng và thể trạng ổn định khi sinh hoạt – làm việc hằng ngày\n' +
           '(Mô tả theo hướng dinh dưỡng, không thay thế thuốc/không mô tả tác dụng điều trị.)\n\n' +
-
           '👨‍👩‍👧 PHÙ HỢP CHO\n' +
           'Người trưởng thành muốn bổ sung Canxi – Vitamin hằng ngày\n' +
           'Người bận rộn cần một lựa chọn bữa phụ nhanh gọn\n' +
           'Người có chế độ ăn cần bổ sung thêm vi chất (tùy nhu cầu cá nhân)\n\n' +
-
           '☕ HƯỚNG DẪN PHA & CÁCH DÙNG (THEO NHÃN)\n' +
           'Cho 4 muỗng gạt ngang (tương đương 50g) bột vào 180ml nước ấm 40–50°C\n' +
           'Khuấy đều đến khi tan hoàn toàn\n' +
           'Uống 3 ly mỗi ngày\n\n' +
-
           '📦 BẢO QUẢN & CẢNH BÁO TRÊN NHÃN\n' +
           'Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp\n' +
           'Đậy kín nắp sau mỗi lần sử dụng, không bảo quản trong tủ lạnh\n' +
           'Nên sử dụng sản phẩm trong vòng 01 tháng sau khi mở nắp\n' +
           'Thông tin cảnh báo: Sản phẩm có chứa sữa và đạm đậu nành (theo nhãn)\n\n' +
-
           '⏳ HẠN SỬ DỤNG\n' +
           '24 tháng kể từ ngày sản xuất\n' +
           'NSX/HSD: xem dưới đáy lon (theo nhãn)\n\n' +
-
           'Lưu ý:\n' +
           'Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh.\n' +
           'Không sử dụng cho người mẫn cảm với bất kỳ thành phần nào của sản phẩm.\n' +

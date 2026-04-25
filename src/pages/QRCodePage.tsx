@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { Link } from 'react-router-dom';
 import { Camera, Download, Home, Printer, ScanLine } from 'lucide-react';
-import { UI_TEXT } from '../constants';
+import { bestSellers, UI_TEXT } from '../constants';
 
 const QR_BADGE =
   'data:image/svg+xml;charset=UTF-8,' +
@@ -25,132 +25,15 @@ const QRCodePage = () => {
     };
   }, []);
 
-  const qrCodes = [
-    {
-      id: 1,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Buonavit D3 Forte Buona 12ml - Bổ sung Vitamin D cho trẻ',
-      productId: '21479',
-    },
-    {
-      id: 2,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Energia Oro Buona 10 lọ x 10ml – Hỗ trợ biếng ăn cho trẻ',
-      productId: '21480',
-    },
-    {
-      id: 3,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Buonavit Baby Buona 20ml - Bổ sung Vitamin cho bé',
-      productId: '21481',
-    },
-    {
-      id: 4,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Ferrodue Buona 15ml - Bổ sung sắt cho trẻ',
-      productId: '21483',
-    },
-    {
-      id: 5,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Zincodue Buona 30ml - Bổ sung kẽm cho trẻ',
-      productId: '21484',
-    },
-    {
-      id: 6,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Circadiem Buona 20ml - Hỗ trợ giúp ngủ ngon',
-      productId: '21487',
-    },
-    {
-      id: 7,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Simbiosistem Buona 10ml - Bổ sung lợi khuẩn cho trẻ',
-      productId: '21488',
-    },
-    {
-      id: 8,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Simbiosistem Buona 20 gói x 2g - Hỗ trợ rối loạn tiêu hóa',
-      productId: '21489',
-    },
-    {
-      id: 9,
-      category: 'thuoc',
-      productName: 'Odistad 60 Stellapharm 2 vỉ x 21 viên',
-      productId: '21599',
-    },
-    {
-      id: 10,
-      category: 'thuoc',
-      productName: 'Corbiere Calcium Plus Sanofi 30 ống x 10ml - Bổ sung calci, vitamin D3',
-      productId: '21601',
-    },
-    {
-      id: 11,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Viên uống SpringLeaf Glucosamine 1500 Plus Chondroitin 90 viên',
-      productId: '21056',
-    },
-    {
-      id: 12,
-      category: 'thiet-bi-y-te',
-      productName: 'Blood Glucose TS3300 Max MediUSA 50 cái - Que thử đường huyết',
-      productId: '21338',
-    },
-    {
-      id: 13,
-      category: 'thiet-bi-y-te',
-      productName: 'Blood Glucose MM3300 MediUSA 25 cái - Kim lấy máu',
-      productId: '21340',
-    },
-    {
-      id: 14,
-      category: 'thuc-pham-chuc-nang',
-      productName:
-        'Glucosamine Chondroitin MSM Calcium MediUSA 30 viên - Hỗ trợ giảm thoái hóa khớp',
-      productId: '21391',
-    },
-    {
-      id: 15,
-      category: 'thuc-pham-chuc-nang',
-      productName: 'Super Glucoisamin Goodlife CT 60 viên - Hỗ trợ giảm đau xương khớp',
-      productId: '21586',
-    },
-    {
-      id: 16,
-      category: 'thuoc',
-      productName: 'Mebecar Chewtab Boston Pharma 1 vỉ x 1 viên',
-      productId: '21874',
-    },
-    {
-      id: 17,
-      category: 'thuoc',
-      productName: 'Mitizen 400 Hasan 1 vỉ x 1 viên',
-      productId: '21876',
-    },
-    {
-      id: 18,
-      category: 'thuoc',
-      productName: 'Abiraheet 250mg Heet Health Care lọ 120 viên',
-      productId: '21877',
-    },
-    {
-      id: 19,
-      category: 'thiet-bi-y-te',
-      productName: 'MD H2O 500ml - Nước uống tăng năng lượng',
-      productId: '21878',
-    },
-    {
-      id: 20,
-      category: 'thiet-bi-y-te',
-      productName: 'Glow Ultra Purified Water MD H2O 100ml - Nước siêu tinh khiết',
-      productId: '21879',
-    },
-  ].map((item) => ({
-    ...item,
-    url: `${PRODUCT_BASE_URL}/${item.category}/${item.productId}`,
-  }));
+  const qrCodes = bestSellers
+    .filter((product) => product.id === 'ma01' || product.id === 'ma02')
+    .map((product, index) => ({
+      id: index + 1,
+      category: product.category,
+      productName: product.name,
+      productId: product.id,
+      url: `${PRODUCT_BASE_URL}/${product.category}/${product.id}`,
+    }));
 
   const downloadQRCode = (productId: string) => {
     const svg = document.getElementById(`qr-${productId}`);
