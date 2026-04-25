@@ -7,6 +7,8 @@ export interface Product {
   image: string;
   hasPrescription?: boolean;
   quantity?: number;
+  description?: string;
+  subImages?: string[];
 }
 
 export interface Category {

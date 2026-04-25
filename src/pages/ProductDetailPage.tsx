@@ -41,12 +41,15 @@ interface ProductDetailPageProps {
 const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
   const { category, id } = useParams();
   const [quantity, setQuantity] = useState(1);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const navigate = useNavigate();
 
   const categoryProducts = Object.values(CATEGORY_PAGE_DATA).flatMap((data) => data.products);
   const brandProducts = Object.values(BRAND_PAGE_DATA).flatMap((data) => data.products);
   const allProducts = [...bestSellers, ...newArrivals, ...categoryProducts, ...brandProducts];
   const product = allProducts.find((p) => p.id === id) || bestSellers[0];
+  const productImages = [product.image, ...(product.subImages || [])];
+  const activeProductImage = selectedImage || product.image;
   const categoryTitle = CATEGORY_PAGE_DATA[category || '']?.title || UI_TEXT.CATEGORY;
   const fallbackRelatedProducts = allProducts
     .filter((p) => p.id !== product.id && p.category === product.category)
@@ -103,6 +106,52 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
     ? productsByIds(productDetail.sameBrandIds)
     : sameBrandOptions.slice(0, 4);
   const previewSections = productDetail.contentSections.slice(0, 3);
+  const renderProductDescription = (description: string) => {
+    const sections = description
+      .split(/\n{2,}/)
+      .map((section) =>
+        section
+          .split('\n')
+          .map((line) => line.trim())
+          .filter(Boolean),
+      )
+      .filter((section) => section.length > 0);
+
+    return (
+      <div className="mb-8 space-y-4 rounded-2xl border border-blue-50 bg-[#f8fbff] p-5">
+        {sections.map(([title, ...lines]) => (
+          <section key={title} className="rounded-xl bg-white p-4 shadow-sm ring-1 ring-gray-100">
+            <h3 className="mb-3 text-[15px] font-black leading-snug text-primary">{title}</h3>
+            {lines.length > 0 && (
+              <ul className="space-y-2 text-[14px] font-medium leading-relaxed text-gray-700">
+                {lines.map((line) => {
+                  const [label, ...valueParts] = line.split(':');
+                  const value = valueParts.join(':').trim();
+
+                  return (
+                    <li key={line} className="flex gap-2">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/70" />
+                      <span>
+                        {value ? (
+                          <>
+                            <span className="font-black text-gray-900">{label.trim()}:</span>{' '}
+                            {value}
+                          </>
+                        ) : (
+                          line
+                        )}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </section>
+        ))}
+      </div>
+    );
+  };
+
   const renderSectionBody = (section: ProductContentSection, muted = false) => (
     <div
       className={`space-y-3 text-gray-700 font-medium ${muted ? 'text-gray-400 opacity-50 blur-[1px]' : ''}`}
@@ -130,6 +179,10 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
       document.title = 'Minh Châu';
     };
   }, [product.name]);
+
+  useEffect(() => {
+    setSelectedImage(null);
+  }, [product.id]);
 
   const detailBrandSwiperRef = React.useRef<SwiperType | null>(null);
   const detailBrandMobileSwiperRef = React.useRef<SwiperType | null>(null);
@@ -203,7 +256,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
                 <div className="lg:col-span-4 flex flex-col gap-6">
                   <div className="aspect-square border border-gray-200 border-dashed rounded-2xl md:rounded-3xl overflow-hidden p-6 md:p-12 flex items-center justify-center relative group bg-white shadow-sm">
                     <img
-                      src={product.image}
+                      src={activeProductImage}
                       alt={product.name}
                       className="w-full h-full object-contain transition-transform duration-500"
                     />
@@ -211,6 +264,30 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
                       <Search size={22} className="text-gray-500" />
                     </div>
                   </div>
+
+                  {product.subImages?.length ? (
+                    <div className="grid grid-cols-4 gap-2 md:gap-3">
+                      {productImages.map((image, index) => (
+                        <button
+                          key={`${image}-${index}`}
+                          type="button"
+                          onClick={() => setSelectedImage(image)}
+                          className={`aspect-square rounded-lg border bg-white p-2 transition-all ${
+                            activeProductImage === image
+                              ? 'border-primary shadow-md shadow-blue-100'
+                              : 'border-gray-100 hover:border-primary/50'
+                          }`}
+                          aria-label={`Xem ảnh sản phẩm ${index + 1}`}
+                        >
+                          <img
+                            src={image}
+                            alt={`${product.name} ${index + 1}`}
+                            className="h-full w-full object-contain"
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  ) : null}
 
                   {/* Warning/Info Text */}
                   <div className="text-[13px] md:text-[11px] text-gray-500 space-y-2 md:space-y-1 px-1">
@@ -260,7 +337,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
                     <span className="text-gray-500 text-sm">{UI_TEXT.PRICE_LABEL}</span>
                     <span className="text-3xl font-black text-red-600">{product.price}</span>
                   </div>
-
+                  {!!product.description && renderProductDescription(product.description)}
                   <div className="flex items-center gap-4 mb-8">
                     <div className="flex items-center border border-gray-200 rounded-xl overflow-hidden">
                       <button
@@ -412,6 +489,10 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
               </div>
               <span className="text-base font-bold text-gray-600">5.0/5</span>
             </div>
+
+            {!!product.description && (
+              <div className="lg:hidden">{renderProductDescription(product.description)}</div>
+            )}
 
             {/* Lựa chọn khác cùng hãng - Mobile/Tablet Slider */}
             <div className="lg:hidden mb-12 relative">

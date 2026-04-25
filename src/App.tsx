@@ -32,7 +32,7 @@ const CART_STORAGE_KEY = 'minh_chau_cart_items';
 const ArticleOrCategoryPage = () => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
   const article = categorySlug ? articleDetailBySlug[categorySlug] : undefined;
-
+  console.log(article, '---article')
   if (article) {
     return <ArticleDetailPage article={article} />;
   }

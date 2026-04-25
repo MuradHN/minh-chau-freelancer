@@ -243,7 +243,7 @@ const CategoryListingPage = () => {
     const categoryProducts = allProducts.filter((product) => product.category === categorySlug);
     return categoryProducts.length > 0 ? categoryProducts : allProducts;
   }, [categoryPageData, categorySlug]);
-
+  console.log(products, '---products')
   const totalProducts = categoryPageData?.totalProducts ?? products.length;
   const isDiseasePage = categorySlug === 'tim-hieu-benh';
   const isNewsPage = categorySlug === 'tin-tuc';

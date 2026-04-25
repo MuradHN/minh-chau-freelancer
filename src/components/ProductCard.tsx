@@ -30,9 +30,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         />
       </div>
       <div className="flex-1 flex flex-col pt-1 md:pt-2">
-        <h3 className="text-[13px] md:text-[14px] font-black md:font-bold text-gray-900 line-clamp-3 mb-2 min-h-[50px] md:min-h-[63px] hover:text-[#0033FF] leading-tight">
-          {product.name}
-        </h3>
+        <div className="group/title relative mb-2">
+          <h3
+            title={product.name}
+            className="product-card-title text-[13px] md:text-[14px] font-black md:font-bold text-gray-900 group-hover/title:text-[#0033FF]"
+          >
+            {product.name}
+          </h3>
+          <div className="pointer-events-none absolute bottom-full left-0 right-0 z-30 mb-2 hidden rounded-lg border border-gray-100 bg-white p-3 text-[13px] font-bold leading-snug text-gray-900 shadow-xl group-hover/title:block">
+            {product.name}
+          </div>
+        </div>
         <div className="mt-auto">
           {!product.hasPrescription && product.price !== '0 đ' && (
             <>

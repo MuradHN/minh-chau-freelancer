@@ -6,6 +6,7 @@ import {
   ShoppingCart,
   Plus,
   X,
+  ChevronDown,
   Facebook,
   Youtube,
   LucideIcon,
@@ -18,6 +19,8 @@ import {
   NAV_SUBITEM_SLUGS,
   CATEGORY_PAGE_DATA,
   BRAND_PAGE_DATA,
+  HEADER_NAV_ITEMS,
+  MEGA_MENU_DATA,
   bestSellers,
   newArrivals,
   categories,
@@ -213,10 +216,24 @@ const allSearchCategories = (() => {
 
 type SearchTab = 'products' | 'categories';
 
+const formatNavLabel = (value: string) =>
+  value
+    .toLocaleLowerCase('vi-VN')
+    .replace(/^./, (match) => match.toLocaleUpperCase('vi-VN'))
+    .replace(/&\s*./g, (match) => match.toLocaleUpperCase('vi-VN'));
+
+const formatMenuCardLabel = (value: string) =>
+  value
+    .toLocaleLowerCase('vi-VN')
+    .replace(/(^|\s|&|-)\S/g, (match) => match.toLocaleUpperCase('vi-VN'));
+
 const Header = ({ onOpenCart, cartCount, onOpenLogin, isLoginOpen, onCloseLogin }: HeaderProps) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchTab, setSearchTab] = useState<SearchTab>('products');
+  const [activeNavItem, setActiveNavItem] = useState<string | null>(null);
+  const [activeMenuGroup, setActiveMenuGroup] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
@@ -229,6 +246,22 @@ const Header = ({ onOpenCart, cartCount, onOpenLogin, isLoginOpen, onCloseLogin 
 
     document.addEventListener('mousedown', handlePointerDown);
     return () => document.removeEventListener('mousedown', handlePointerDown);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const nextIsScrolled = window.scrollY > 8;
+      setIsScrolled(nextIsScrolled);
+
+      if (nextIsScrolled) {
+        setActiveNavItem(null);
+      }
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const normalizedQuery = normalizeSearch(searchQuery);
@@ -271,8 +304,18 @@ const Header = ({ onOpenCart, cartCount, onOpenLogin, isLoginOpen, onCloseLogin 
     setIsSearchOpen(false);
   };
 
+  const navigateAndCloseMenu = (path: string) => {
+    navigate(path);
+    setActiveNavItem(null);
+    setActiveMenuGroup(0);
+  };
+
+  const desktopNavItems = HEADER_NAV_ITEMS.filter((item) => item !== UI_TEXT.NAV_DISEASE);
+  const activeNavGroups = activeNavItem ? (MEGA_MENU_DATA[activeNavItem] ?? []) : [];
+  const selectedMenuGroup = activeNavGroups[activeMenuGroup] ?? activeNavGroups[0];
+
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
       {/* Deep Blue Header */}
       <div className="bg-[rgba(0,51,255,0.9)] text-white relative z-[60]">
         <div className="container-custom flex min-h-[66px] min-w-0 items-center justify-between gap-2 py-2 md:min-h-[92px] md:flex-wrap md:gap-x-3 md:gap-y-2 md:py-3 lg:flex-nowrap lg:py-0 lg:gap-x-5">
@@ -486,6 +529,132 @@ const Header = ({ onOpenCart, cartCount, onOpenLogin, isLoginOpen, onCloseLogin 
             />
           </div>
         </div>
+      </div>
+
+      <div className="relative hidden md:block" onMouseLeave={() => setActiveNavItem(null)}>
+        {/* Navigation Bar */}
+        <motion.nav
+          initial={false}
+          animate={{
+            height: isScrolled ? 0 : 'auto',
+            opacity: isScrolled ? 0 : 1,
+          }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
+          className="relative z-[50] overflow-hidden border-b border-gray-50 bg-white"
+        >
+          <div className="container-custom">
+            <ul className="flex items-center justify-between gap-2 py-3 text-[13px] font-bold text-gray-700 lg:text-[14px]">
+              {desktopNavItems.map((nav) => {
+                const slug = NAV_ITEM_SLUGS[nav];
+                const hasMegaMenu = Boolean(MEGA_MENU_DATA[nav]);
+
+                return (
+                  <li
+                    key={nav}
+                    className={`relative flex cursor-pointer items-center gap-1 pb-1 transition-colors hover:text-primary ${
+                      activeNavItem === nav ? 'text-primary' : ''
+                    }`}
+                    onClick={() => {
+                      if (slug) navigateAndCloseMenu(`/${slug}`);
+                    }}
+                    onMouseEnter={() => {
+                      if (hasMegaMenu) {
+                        setActiveNavItem(nav);
+                        setActiveMenuGroup(0);
+                      } else {
+                        setActiveNavItem(null);
+                      }
+                    }}
+                  >
+                    {formatNavLabel(nav)}
+                    {hasMegaMenu && <ChevronDown size={14} />}
+                    {activeNavItem === nav && (
+                      <motion.div
+                        layoutId="underline"
+                        className="absolute bottom-0 left-0 h-[2px] w-full bg-primary"
+                      />
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </motion.nav>
+
+        {!isScrolled && activeNavItem && activeNavGroups.length > 0 && (
+          <div
+            className="absolute left-0 right-0 top-full z-[90] bg-black/70 px-4 pb-6 pt-0"
+            onClick={() => setActiveNavItem(null)}
+            onMouseMove={(event) => {
+              if (event.target === event.currentTarget) {
+                setActiveNavItem(null);
+              }
+            }}
+          >
+            <div
+              className="mx-auto flex h-[min(625px,calc(100vh-176px))] max-w-[1300px] overflow-hidden rounded-[22px] bg-white shadow-2xl"
+              onClick={(event) => event.stopPropagation()}
+              onMouseLeave={() => setActiveNavItem(null)}
+            >
+              <div className="w-[320px] shrink-0 overflow-y-auto bg-white py-3">
+                {activeNavGroups.map((group, index) => (
+                  <button
+                    key={group.name}
+                    type="button"
+                    onMouseEnter={() => setActiveMenuGroup(index)}
+                    onClick={() =>
+                      navigateAndCloseMenu(
+                        `/${NAV_SUBITEM_SLUGS[group.name] ?? NAV_ITEM_SLUGS[activeNavItem]}`,
+                      )
+                    }
+                    className={`block w-full px-6 py-[14px] text-left text-[14px] font-black leading-snug transition-colors ${
+                      index === activeMenuGroup
+                        ? 'bg-[#eef3f8] text-gray-950'
+                        : 'bg-white text-gray-950 hover:bg-gray-50'
+                    }`}
+                  >
+                    {group.name}
+                  </button>
+                ))}
+              </div>
+
+              <div className="my-4 w-px shrink-0 bg-gray-300" />
+
+              <div className="flex-1 overflow-y-auto bg-[#e8eef4] p-6">
+                {selectedMenuGroup?.sub.length ? (
+                  <div className="grid grid-cols-3 gap-x-4 gap-y-3">
+                    {selectedMenuGroup.sub.map((subItem) => (
+                      <button
+                        key={subItem}
+                        type="button"
+                        onClick={() =>
+                          navigateAndCloseMenu(
+                            `/${NAV_SUBITEM_SLUGS[subItem] ?? NAV_ITEM_SLUGS[activeNavItem]}`,
+                          )
+                        }
+                        className="min-h-[58px] rounded-xl bg-white px-4 py-3 text-left text-[14px] font-black leading-snug text-gray-950 shadow-[0_2px_8px_rgba(15,23,42,0.08)] transition-colors hover:text-primary"
+                      >
+                        {formatMenuCardLabel(subItem)}
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      navigateAndCloseMenu(
+                        `/${NAV_SUBITEM_SLUGS[selectedMenuGroup.name] ?? NAV_ITEM_SLUGS[activeNavItem]}`,
+                      )
+                    }
+                    className="min-h-[58px] rounded-xl bg-white px-4 py-3 text-left text-[14px] font-black leading-snug text-gray-950 shadow-[0_2px_8px_rgba(15,23,42,0.08)] transition-colors hover:text-primary"
+                  >
+                    {selectedMenuGroup.name}
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
