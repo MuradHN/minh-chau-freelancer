@@ -378,7 +378,7 @@ const CheckoutPage = ({ cartItems }: CheckoutPageProps) => {
   };
 
   return (
-    <div className="bg-white min-h-screen pt-10 md:pt-12 pb-16">
+    <div className="bg-white min-h-screen pt-10 md:pt-12 pb-36 md:pb-16">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row gap-7 xl:gap-8 items-start">
           {/* LEFT: Shipping Info */}
@@ -537,7 +537,7 @@ const CheckoutPage = ({ cartItems }: CheckoutPageProps) => {
 
           {/* RIGHT: Order Summary */}
           <div className="w-full lg:w-[480px] xl:w-[500px]">
-            <div className="bg-white rounded-lg border border-gray-200 overflow-hidden sticky top-32">
+            <div className="bg-white rounded-lg border border-gray-200 overflow-visible lg:overflow-hidden lg:sticky lg:top-32">
               <div className="p-3">
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-[16px] font-black text-primary uppercase tracking-wide">
@@ -665,7 +665,7 @@ const CheckoutPage = ({ cartItems }: CheckoutPageProps) => {
                 </div>
 
                 {/* Place order button */}
-                <button className="w-full bg-accent text-white py-3.5 rounded-3xl font-black text-[16px] hover:bg-accent-dark transition-all shadow-xl shadow-red-100 uppercase mt-7 tracking-widest active:scale-[0.98]">
+                <button className="w-full bg-accent text-white py-3.5 rounded-3xl font-black text-[16px] hover:bg-accent-dark transition-all shadow-xl shadow-red-100 uppercase mt-7 mb-4 md:mb-0 tracking-widest active:scale-[0.98]">
                   {UI_TEXT.CHECKOUT_TITLE}
                 </button>
               </div>
