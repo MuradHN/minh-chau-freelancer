@@ -133,8 +133,13 @@ const CartSidebar = ({
 
         {/* Footer */}
         {cartItems.length > 0 && (
-          <div className="p-4 border-t border-gray-100 bg-gray-50">
-            <div className="flex justify-end mb-6">
+          <motion.div
+            initial={{ x: '100%' }}
+            animate={{ x: isOpen ? 0 : '100%' }}
+            transition={{ type: 'tween', duration: 0.3 }}
+            className="fixed bottom-10 right-0 z-[160] w-full max-w-[480px] border-t border-gray-100 bg-gray-50 px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom))] md:bottom-0"
+          >
+            <div className="flex justify-end mb-4">
               <button
                 onClick={onClearCart}
                 className="text-gray-400 text-xs hover:text-red-500 transition-colors"
@@ -147,11 +152,11 @@ const CartSidebar = ({
                 navigate('/thanh-toan');
                 onClose();
               }}
-              className="w-full bg-[#E33E43] text-white py-4 rounded-md font-bold text-base hover:bg-[#c93338] transition-colors shadow-lg shadow-red-100 uppercase tracking-widest"
+              className="w-full bg-[#E33E43] text-white py-3.5 rounded-md font-bold text-base hover:bg-[#c93338] transition-colors shadow-lg shadow-red-100 uppercase tracking-widest"
             >
               {UI_TEXT.CHECKOUT_NOW}
             </button>
-          </div>
+          </motion.div>
         )}
       </motion.div>
     </>
