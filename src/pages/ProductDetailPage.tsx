@@ -699,7 +699,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
 
             {/* Cùng thương hiệu */}
             <div className="mt-10 md:mt-20 pb-20">
-              <div className="flex justify-between items-end mb-8 px-1 lg:px-0">
+              <div className="flex justify-between items-end mb-8 px-1 lg:px-0 flex-wrap">
                 <h2 className="text-[22px] md:text-2xl font-black text-gray-900 uppercase">
                   {UI_TEXT.SAME_BRAND_PRODUCTS}
                 </h2>
