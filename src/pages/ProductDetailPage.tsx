@@ -50,6 +50,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
   const product = allProducts.find((p) => p.id === id) || bestSellers[0];
   const productImages = [product.image, ...(product.subImages || [])];
   const activeProductImage = selectedImage || product.image;
+  const shouldScaleProductImage = ['ma01', 'ma02'].includes(product.id);
   const categoryTitle = CATEGORY_PAGE_DATA[category || '']?.title || UI_TEXT.CATEGORY;
   const fallbackRelatedProducts = allProducts
     .filter((p) => p.id !== product.id && p.category === product.category)
@@ -254,11 +255,17 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
               <div className="grid grid-cols-1 lg:grid-cols-9 gap-8 lg:gap-12">
                 {/* Image Section */}
                 <div className="lg:col-span-4 flex flex-col gap-6">
-                  <div className="aspect-square border border-gray-200 border-dashed rounded-2xl md:rounded-3xl overflow-hidden p-6 md:p-12 flex items-center justify-center relative group bg-white shadow-sm">
+                  <div
+                    className={`aspect-square border border-gray-200 border-dashed rounded-2xl md:rounded-3xl overflow-hidden flex items-center justify-center relative group bg-white shadow-sm ${
+                      shouldScaleProductImage ? '' : 'p-6 md:p-12'
+                    }`}
+                  >
                     <img
                       src={activeProductImage}
                       alt={product.name}
-                      className="w-full h-full object-contain transition-transform duration-500"
+                      className={`w-full h-full object-contain transition-transform duration-500 ${
+                        shouldScaleProductImage ? 'scale-150' : ''
+                      }`}
                     />
                     <div className="absolute bottom-4 right-4 bg-white p-2.5 rounded-full cursor-pointer shadow-md border border-gray-100">
                       <Search size={22} className="text-gray-500" />
