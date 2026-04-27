@@ -10,6 +10,8 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const navigate = useNavigate();
+  const shouldScaleProductImage = ['ma01', 'ma02'].includes(product.id);
+
   return (
     <motion.div
       onClick={() => navigate(`/${product.category}/${product.id}`)}
@@ -22,7 +24,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <img
           src={product.image}
           alt={product.name}
-          className="max-w-full max-h-full object-contain"
+          className={`max-w-full max-h-full object-contain ${
+            shouldScaleProductImage ? 'scale-125' : ''
+          }`}
           onError={(e) => {
             const target = e.target as HTMLImageElement;
             target.src = 'https://picsum.photos/400/400?random=' + product.id;
