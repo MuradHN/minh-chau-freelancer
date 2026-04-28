@@ -324,7 +324,7 @@ const Header = ({ onOpenCart, cartCount, onOpenLogin, isLoginOpen, onCloseLogin 
             <img
               src={LOGO_URL}
               alt={LOGO_ALT}
-              className="h-[40px] w-[112px] object-contain md:h-[58px] md:w-[170px]"
+              className="h-[46px] w-[129px] object-contain md:h-[58px] md:w-[170px]"
               referrerPolicy="no-referrer"
             />
           </div>

@@ -249,7 +249,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
           <div className="flex-1 lg:w-3/4">
             <div className="flex flex-col gap-6 mb-8 lg:mb-16">
               {/* Product Title on Mobile */}
-              <h1 className="text-[22px] md:text-3xl font-black text-gray-900 leading-tight sm:hidden block">
+              <h1 className="text-[22px] md:text-3xl font-black text-[#0033ff] leading-tight sm:hidden block">
                 {product.name}
               </h1>
               <div className="grid grid-cols-1 lg:grid-cols-9 gap-8 lg:gap-12">
@@ -326,7 +326,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
                 {/* Right/Middle Info (Desktop) */}
                 <div className="lg:col-span-5 hidden lg:block">
                   {/* Product Title on Mobile */}
-                  <h1 className="text-[22px] md:text-3xl font-black text-gray-900 leading-tight block">
+                  <h1 className="text-[22px] md:text-3xl font-black text-[#0033ff] leading-tight block">
                     {product.name}
                   </h1>
                   <div className="text-[11px] text-gray-400 mb-2 font-medium">#{product.id}</div>
@@ -342,7 +342,9 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
 
                   <div className="flex items-center gap-4 mb-8">
                     <span className="text-gray-500 text-sm">{UI_TEXT.PRICE_LABEL}</span>
-                    <span className="text-3xl font-black text-red-600">{product.price}</span>
+                    <span className="text-[40px] font-black leading-none text-red-600">
+                      {product.price}
+                    </span>
                   </div>
                   {!!product.description && renderProductDescription(product.description)}
                   <div className="flex items-center gap-4 mb-8">
@@ -571,7 +573,7 @@ const ProductDetailPage = ({ onAddToCart }: ProductDetailPageProps) => {
             {/* Sticky Bottom Bar for Mobile */}
             <div className="lg:hidden fixed bottom-[74px] left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-4">
               <div className="flex flex-col">
-                <span className="text-[14px] font-black text-red-600">
+                <span className="text-[18px] font-black leading-tight text-red-600">
                   {UI_TEXT.PRICE_LABEL} {product.price}
                 </span>
               </div>
